@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A News Portal - Amar News</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+
+        nav ul{
+            list-style-type: none;/*otherwise, bullet points are shown */
+            display: flex; /*to lay contents side by side*/
+            justify-content: center;/*to place text in center*/
+        }
+
+       
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;/*to avoid default underline*/
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;  /**/  
+        }
+        /*header background green, text white and text in middle*/
+        th{
+            background-color: green; 
+            color: white;
+            text-align: center;
+        }
+        td {
+            border: 1px solid rgb(138, 132, 132); /* Single-line border for all cells */
+            text-align: left; 
+        }
+        /*all headline in green color, text are white*/
+        #headline{
+            background-color: green;
+            color: white;
+        }
+        /*green color footer, text are white, width and height as needed*/
+        footer{
+            background-color: green;
+            color: white;
+            width: 100%;
+            height:70px;
+            text-align: center;
+        }
+        /*10px padding so that icons won't overlap*/
+        footer p i{  
+            padding: 5px;
+        }
+        
+
+      
+    </style>    
+        
+</head>
+<body>
+    
+    <header style="background-color: green; color: white;  text-align: center;"> 
+        <h1>Amar News</h1>
+        <p>Reliable News, Updated Always</p>
+    </header>
+    <marquee style="background-color: green; color: white;">We are available for 24/7. Call at 08675655098...</marquee>   <!--for the auto plying line -->
+    <nav style="background-color: green; color: white;">
+        <ul  style="list-style-type: none;display: flex;">
+            <li><a href="#home"><i class="fas fa-home"></i>Home </a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i>About </a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i>Services</a></li>
+            <li><a href="#contact"><i class="fas fa-phone-alt"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h2><i class="fa fa-fire" aria-hidden="true"></i>Latest Today</h2> <!--table title-->
+        <table border="1">
+            <tr> 
+                <!--table header-->
+                <th><i class="fa fa-archive" aria-hidden="true"></i>Topic</td> 
+                <th><i class="fa fa-newspaper" aria-hidden="true"></i>News</td>
+                <th><i class="fa fa-calendar" aria-hidden="true"></i>Date</td>               
+            </tr>
+            <!--table data-->
+            <tr>
+                <td>Agriculture</td>
+                <td>A new rice protein is invented.</td>
+                <td>24 November,2024</td>
+            </tr>
+            <tr>
+                <td>COP-29</td>
+                <td>A battle against climate change.</td>
+                <td>24 November,2024</td>
+            </tr>
+            <tr>
+                <td>Nobel Prize</td>
+                <td>This year 11 people is nominated.</td>
+                <td>24 November,2024</td>
+            </tr>
+        
+        </table>
+    </div>
+    <!--important hightlights, title in green background-->
+    <div>
+        <h2 id="headline"><i class="fa fa-street-view" aria-hidden="true"></i>World Overview</h2>
+        <img src="world in diff time.jpg" alt="world" width="500" height="300">
+
+        <h3><i class="fa fa-globe" aria-hidden="true"></i>Increasing global temperature</h3>
+        <h3><i class="fa fa-calendar" aria-hidden="true"></i>Published at: 24 September</h3>
+        <i class="fa fa-forward" aria-hidden="true"></i>
+        <label for="toggle">Read More</label>
+        <p>Climate change refers to long-term shifts in temperatures and weather patterns. Such shifts can be natural, due to changes in the sun activity or large volcanic eruptions. But since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels like coal, oil and gas.
+
+            Burning fossil fuels generates greenhouse gas emissions that act like a blanket wrapped around the Earth, trapping the heat and raising temperatures.
+            
+            The main greenhouse gases that are causing climate change include carbon dioxide and methane. These come from using gasoline for driving a car or coal for heating a building, for example. Clearing land and cutting down forests can also release carbon dioxide. Agriculture, oil and gas operations are major sources of methane emissions. Energy, industry, transport, buildings, agriculture and land use are among the main sectors causing greenhouse gases.</p>
+        
+
+
+    </div>
+       <!--important hightlights, title in green background-->
+    <div>
+        <h2 id="headline"><i class="fa fa-bicycle" aria-hidden="true">Carbon Footprint</i></h2>
+        <img src="cycle.jpg" alt="A bicycle" width="500" height="300">
+
+        <h3><i class="fa fa-users" aria-hidden="true"></i>Ride Bicycle - Reduce Carbon Footprint</h3>
+        <h3><i class="fa fa-calendar" aria-hidden="true"></i>Published at: 24 September</h3>
+        <i class="fa fa-forward" aria-hidden="true"></i>
+        <label for="toggle">Read More</label>
+        <p>Cycling stands as an emblem of zero-emission transportation, making it a cornerstone for reducing air pollution and greenhouse gas emissions. Unlike cars that rely on fossil fuels and emit harmful gases, bicycles obviously have no emissions.     
+
+            This quality not only keeps the air clean and free from pollutants but also significantly reduces the carbon footprint of travel. One person alone will have little impact, but collectively pivoting to walking and cycling can have a great impact over time.</p>
+        <p></p>
+
+
+
+
+    </div>
+       <!--important hightlights, title in green background-->
+    <div>
+        <h2 id="headline"><i class="fa fa-cogs" aria-hidden="true"></i>Our Country</h2>
+        <img src="dhaka.jpg" alt="A picture of Dhaka" width="500" height="300">
+
+        <h3><i class="fa fa-gavel" aria-hidden="true"></i>Systems in turmoil</h3>
+        <h3><i class="fa fa-calendar" aria-hidden="true"></i>Published at: 24 September</h3>
+        <i class="fa fa-forward" aria-hidden="true"></i>
+        <label for="toggle">Read More</label>
+        <p>The turning point came in June 2024, when Bangladesh High Court re-instated a quota reserving 30% of government jobs for relatives of veterans from Bangladeshs 1971 war of independence. With government jobs in high demand due to elevated graduate unemployment, students protested the quota, which they also viewed as favouring supporters of Hasinas Awami League party. The Supreme Court eventually reduced the quota in late July to 5%. </p>
+        
+
+
+    </div>
+    <!--feedback sending -->
+    <div>
+        <h3 id="headline"><i class="fa fa-question" aria-hidden="true"></i>Submit Your Response</h3>
+        <fieldset>
+            <legend>Your message</legend> 
+            <form action="">
+                Name: <br> <input type="text">  <br>
+                Email: <br> <input type="email"> <br>
+                Write your message here: <br> <textarea name="" id=""></textarea> <br>
+                <button type="submit">
+                    <i class="fa fa-paper-plane"></i> Submit
+                </button>
+
+            </form>
+            
+        </fieldset>
+    </div>
+    
+    <!--a video to help relaying message-->
+    <div>
+        <h3 id="headline"><i class="fa fa-paper-plane"></i>How to Post Your Response</h3>
+        <video controls>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T6C8N-lRd4o?si=ElD4YZR-9MD-Ji-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </video> 
+        
+    </div>
+       <!--footer-->
+    <div>
+        <footer>
+            <p> &copy; Shaniza, 2024 My Website | All Rights Reserved<p>
+            <p>Join us at:<i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> </p>
+                
+            
+        </footer>
+    </div>
+
+    
+</body>
+</html>
